@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
-import korNum
+import hangul_num
 
-setup(name=korNum.__name__,
-      description=korNum.__description__,
-      version=korNum.__version__,
-      author=korNum.__author__,
-      author_email=korNum.__author_email__,
-      url=korNum.__url__,
-      download_url=korNum.__download_url__,
-      install_requires=korNum.__install_requires__,
-      license=korNum.__license__,
+setup(name=hangul_num.__name__,
+      description=hangul_num.__description__,
+      version=hangul_num.__version__,
+      author=hangul_num.__author__,
+      author_email=hangul_num.__author_email__,
+      url=hangul_num.__url__,
+      download_url=hangul_num.__download_url__,
+      install_requires=hangul_num.__install_requires__,
+      license=hangul_num.__license__,
       long_description=open('./README.md', 'r', encoding='utf-8').read(),
       long_description_content_type="text/markdown",
       packages=find_packages(),
