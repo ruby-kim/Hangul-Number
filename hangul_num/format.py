@@ -268,20 +268,3 @@ def ord_function(text, ord_idx):
         text = text.replace(key, str(value))
 
     return text
-
-
-def kor2num(text):
-    """
-    Args:
-        :param: text(str)
-    Returns:
-        :param: result(list)
-    """
-    card_idx, ord_idx = get_guessed_num_idx(text)
-    ord_result = ord_function(text, ord_idx)
-    card_result = card_function(ord_result, card_idx)
-    return card_result
-
-
-def num2kor(text):
-    return
