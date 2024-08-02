@@ -1,4 +1,4 @@
-from hangul_num import chgList
+from hangul_num import ChangeList
 
 
 def get_guessed_num_idx(text):

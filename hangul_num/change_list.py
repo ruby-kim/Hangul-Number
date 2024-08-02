@@ -7,7 +7,7 @@ Korean number list
 """
 
 
-class chgList:
+class changeList:
     def __init__(self):
         # unit
         self.cardUnit = {
