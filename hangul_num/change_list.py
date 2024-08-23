@@ -10,7 +10,7 @@ Korean number list
 class changeList:
     def __init__(self):
         # unit
-        self.cardUnit = {
+        self.card_unit = {
             "kg": ["키로", "키로그램", "킬로", "킬로그램", "킬로그람"],
             'g': ["그램", "그람"],
             'L': ["리터"],
@@ -24,7 +24,7 @@ class changeList:
             "분": ["분"],
             "가지": ["가지"],
         }
-        self.ordUnit = {
+        self.ord_unit = {
             "개입": ["개입"],
             "개": ["개"],
             "명": ["명"],
@@ -52,7 +52,7 @@ class changeList:
         }
 
         # numList
-        self.cardNum = [
+        self.card_num = [
             ("일", 1),
             ("이", 2),
             ("삼", 3),
@@ -71,7 +71,7 @@ class changeList:
             ("경", 10000000000000000),
             ("해", 100000000000000000000),
         ]
-        self.ordNum = [
+        self.ord_num = [
             ("한", 1),
             ("하나", 1),
             ("두", 2),
