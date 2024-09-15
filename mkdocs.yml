@@ -1,4 +1,4 @@
-site_name: Kor2Num
+site_name: Hangul Number
 theme:
   name: material
 
@@ -8,3 +8,4 @@ nav:
   - Getting Started: getting_started.md
   - File Structure: file_structure.md
   - File Description: file_description.md
+  - Contribution Guide: contri_guide.md

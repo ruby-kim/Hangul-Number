@@ -2,13 +2,13 @@
 
 File description except for docs files
 
-### `./run.py`
+<!-- ### `./run.py`
 
-- test script: input your text in `line 5`
+- test script: input your text in `line 5` -->
 
-### `knum/chgFormat.py`
+### `hangul_number/chgFormat.py`
 
-- change format: the process of kor2num(only cardinal num), num2kor(Not Yet)
+- change format: the process of hangul_num(only cardinal num)
 - Judgement Algorithm: When units appear, determine whether they are numbers by looking at the status of the words immediately preceding them.
 
 ```bash
@@ -20,13 +20,13 @@ File description except for docs files
 - 따라서 여기에는 숫자로 구성된 텍스트가 없는 것으로 판단
 
 ```bash
-나 오늘 포카칩 샀는데 행사해서 하나 가격으로 다섯개 샀어!!
+나 오늘 포카칩 행사해서 하나 가격으로 다섯개 샀어!!
 ```
 
 - 여기서 `포`는 인삼이나 자루 등을 세는 단위 또는 포카칩이라는 명사의 일부분,<br>`개`는 물건을 세는 단위 또는 동물 등 다양한 의미를 가짐
 - `포`앞의 `늘`은 숫자를 세는 단위가 아님<br>`개`앞의 `다섯`은 숫자를 세는 단위
 - 따라서 해당 문장에서는 숫자로 구성된 텍스트가 존재하고, 그 부분이 바로 다섯이라는 것을 알 수 있음
 
-### `knum/chgList.py`
+### `hangul_number/change_list.py`
 
 - change list: [**cardinal** "text" & "real num"] list + [**ordinal** "text" & "real num"] list + [**unit** about cardinal & ordinal] list
