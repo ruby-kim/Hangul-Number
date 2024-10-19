@@ -24,7 +24,18 @@ def parse_korean_number(text, num_list):
     return result
 
 def hangul_num(text):
-    """TODO"""
-    change_list = changeList()
-    text = convert_text(text, change_list, is_cardinal=True)
-    return text
+    data = changeList()
+    
+    # 순서 숫자와 기본 숫자를 모두 합침
+    full_num_list = data.card_num + data.ord_num
+    
+    # 숫자와 단위 매핑 생성
+    pattern = re.compile(r"((?:" + "|".join(re.escape(k) for k, _ in full_num_list) + r")+)(" + "|".join(data.ord_unit.keys()) + r")")
+    
+    def replacer(match):
+        hangul_number = match.group(1)
+        unit = match.group(2)
+        arabic_number = parse_korean_number(hangul_number, full_num_list)
+        return str(arabic_number) + unit
+    
+    return pattern.sub(replacer, text)
